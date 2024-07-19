@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and OTP Verification</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: rgb(188, 190, 189);">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="card p-4 mb-4">
+                    <form id="form">
+                        <div class="form-group">
+                            <label for="fname">Full Name</label>
+                            <input type="text" class="form-control" name="fname" id="fname" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" class="form-control" name="phone" id="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="uname">Username</label>
+                            <input type="text" class="form-control" name="uname" id="uname" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <div class="input-group">
+                                <input type="email" class="form-control" name="email" id="email" required>
+                                <div class="input-group-append">
+                                    <button type="button" class="btn btn-primary" id="btn">Verify</button>
+                                </div>
+                            </div>
+                            <div class="validation mt-2">
+                                <p id="provideemail" class="text-danger">Please provide email..</p>
+                                <p class="emailverified text-success">Email successfully verified</p>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" name="password" id="password" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cpassword">Confirm Password</label>
+                            <input type="password" class="form-control" name="cpassword" id="cpassword" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-success btn-block" id="btn1">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="otp" class="card p-4 position-fixed" style="top: 100px; left: 50%; transform: translateX(-50%); width: 500px; z-index: 1;">
+            <h1 class="text-center mb-4">Enter OTP</h1>
+            <form id="otpForm" class="text-center">
+                <p id="invalid" class="text-danger mb-3">Invalid OTP</p>
+                <div class="form-group mb-3">
+                    <input type="text" class="form-control" name="otp" id="checking" required placeholder="Enter OTP">
+                </div>
+                <button type="submit" class="btn btn-success mb-2" id="su1">Verify</button>
+                <button type="button" class="btn btn-primary mb-2" id="su2">Resend OTP</button>
+                <button type="button" class="btn btn-danger mb-2" id="su3">Edit Email</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("SHu5K-8GHOmsPvSMs"); // Initialize EmailJS with public key
+        })();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

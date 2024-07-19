@@ -1,0 +1,189 @@
+/* #otp
+{
+    display: none;
+    border: 2px solid red;
+    width: 500px;
+    height: 200px;
+    border-radius: 8px;
+    z-index: 1;
+    position: absolute;
+    top:100px;
+    background-color: white;
+
+} */
+/* #otp form
+{
+    margin-left: 20px;
+    margin-top: -10px;
+    border-radius: 8px;
+} */
+
+
+#otp {
+    display: none; /* Hide by default */
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visibility */
+}
+
+#otp h1 {
+    font-size: 24px; /* Adjusted font size for better readability */
+}
+
+#otp .form-control {
+    border-radius: 8px;
+}
+
+#otp .btn {
+    border-radius: 8px; /* Rounded buttons */
+    width: 100%; /* Full width buttons for a consistent look */
+}
+
+#otp .btn-success {
+    background-color: #28a745; /* Custom color for verify button */
+    border: none;
+}
+
+#otp .btn-primary {
+    background-color: #007bff; /* Custom color for resend button */
+    border: none;
+}
+
+#otp .btn-danger {
+    background-color: #dc3545; /* Custom color for edit button */
+    border: none;
+}
+.enter
+{
+     margin-left: 200px;
+     font-size: 23px;
+     border-radius: 8px;
+}
+#su1
+{
+    height: 30px;
+    width: 120px;
+    color: green;
+    font-size: 18px;
+    border-radius: 8px;
+}
+#su2
+{
+    height: 30px;
+    width: 120px;
+    color: blue;
+    font-size: 18px;
+    border-radius: 8px;
+}
+#su3
+{
+    height: 30px;
+    width: 120px;
+    color: orangered;
+    font-size: 18px;
+    border-radius: 8px;
+}
+#checking
+{
+    height: 20px;
+    width: 250px;
+    border-radius: 8px;
+}
+.main
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 750px;
+    margin-left: 450px;
+    border-radius: 8px;
+    
+}
+.chaild1
+{
+    border: 2px solid rgb(77, 46, 46);
+    height: 600px;
+    width: 300px;
+    margin-right: 20px;
+    border-radius: 8px;
+    align-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgb(138, 133, 153);
+}
+.chaild1 form
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    border-radius: 8px;
+}
+#invalid
+{
+    display: none;
+    border-radius: 8px;
+}
+.emailverified
+{
+    display: none;
+    color: green;
+    border-radius: 8px;
+}
+#provideemail
+{
+    display: none;
+    position: relative;
+    z-index: 1;
+    height: 20px;
+    width: 200px;
+    color: red;
+    border-radius: 8px;
+}
+/* #btn
+{
+    background-color: rgba(147, 212, 28, 0.437);
+    color: whitesmoke;
+    height: 30px;
+    width: 70px;
+    margin-left: 5px;
+    font-size: 18px;
+    border-radius: 8px;
+} */
+.chaild1 form input
+{
+    height: 20px;
+    width: 180px;
+    border-radius: 8px;
+}
+.chaild1 form  label 
+{
+    font-size: 20px;
+    border-radius: 8px;
+}
+/* #btn1
+{
+    height: 30px;
+    width: 250px;
+    font-size: 20px;
+    color: rgb(248, 248, 248);
+    background-color: rgb(88, 193, 88);
+    border-radius: 8px;
+} */
+/* .chaild
+{
+    border: 2px solid red;
+    background-image: url(https://i.pinimg.com/736x/d5/0b/d2/d50bd25b9cc865495b31a97e7a1eed18.jpg);
+    height: 600px;
+    width: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+} */
+.validation
+{
+    display: flex;
+    position: relative;
+    height: 40px;
+    justify-content: baseline;
+    bottom: 30px;
+    border-radius: 8px;
+}
